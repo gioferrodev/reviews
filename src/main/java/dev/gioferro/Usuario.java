@@ -1,19 +1,15 @@
 package dev.gioferro;
 
 public class Usuario {
-    private String nome;
-    private int idade;
-    private char sexo;
+    private String login;
 
-    public Usuario(String nome, int idade, char sexo){
-        this.nome = nome;
-        this.idade = idade;
-        this.sexo = sexo;
+    public Usuario(String login){
+        this.login = login;
     }
 
     @Override
     public String toString(){
-        return nome;
+        return login;
     }
 
 }
