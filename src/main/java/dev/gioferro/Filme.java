@@ -19,4 +19,23 @@ public class Filme {
     public String getTitulo(){
         return titulo;
     }
+
+    public int getAnoLancamento(){
+        return anoLancamento;
+    }
+
+    public void adicionaReview(Review r){
+        reviews.add(r);
+        calcularMediaReview();
+    }
+
+    private void calcularMediaReview(){
+        if(!reviews.isEmpty()){
+            double soma = 0;
+            for(Review r : reviews){
+                soma += r.getNota();
+            }
+            mediaReviews = soma / reviews.size();
+        }
+    }
 }
