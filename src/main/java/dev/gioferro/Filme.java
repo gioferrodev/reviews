@@ -24,6 +24,10 @@ public class Filme {
         return anoLancamento;
     }
 
+    public String getCategoria(){
+        return categoria;
+    }
+
     public void adicionaReview(Review r){
         reviews.add(r);
         calcularMediaReview();
