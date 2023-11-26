@@ -28,6 +28,10 @@ public class Filme {
         return categoria;
     }
 
+    public double getMediaReviews(){
+        return mediaReviews;
+    }
+
     public void adicionaReview(Review r){
         reviews.add(r);
         calcularMediaReview();
