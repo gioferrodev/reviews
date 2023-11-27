@@ -21,6 +21,10 @@ public class Review {
         return comentario;
     }
 
+    public int getQtdReviews(){
+        return qtdReviews;
+    }
+
     @Override
     public String toString(){
         return usuario+"deu a nota "+nota+"/5.";
